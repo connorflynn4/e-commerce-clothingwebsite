@@ -32,7 +32,6 @@ class App extends React.Component {
             }
           });
 
-          console.log(this.state);
         });
       }
 
@@ -50,7 +49,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      <Header currentUser={this.state.currentUser} />
+      <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/shop' component={ShopPage} />
